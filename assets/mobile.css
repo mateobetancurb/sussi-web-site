@@ -57,7 +57,7 @@ body {
 
 .main__link--portfolio {
   background-color: whitesmoke;
-  border-radius: 8px;
+  border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #000000;
   display: block;

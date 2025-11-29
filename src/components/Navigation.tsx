@@ -7,8 +7,6 @@ import { NAV_ITEMS } from '../data/navigation';
 const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
-
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -24,7 +22,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => scrollToSection('home')}
-            className="font-serif text-2xl text-[#8B6F47] tracking-wide hover:text-[#C07B5C] transition-colors duration-300"
+            className="font-serif text-2xl text-[#8B6F47] tracking-wide hover:text-[#C07B5C] hover:cursor-pointer transition-colors duration-300"
           >
             Sussana Correa
           </button>
@@ -34,11 +32,10 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-sm tracking-widest uppercase transition-all duration-300 ${
-                  activeSection === item.id
-                    ? 'text-[#C07B5C] font-medium'
-                    : 'text-[#8B6F47] hover:text-[#C07B5C]'
-                }`}
+                className={`text-sm tracking-widest uppercase transition-all hover:cursor-pointer duration-300 ${activeSection === item.id
+                  ? 'text-[#C07B5C] font-medium'
+                  : 'text-[#8B6F47] hover:text-[#C07B5C]'
+                  }`}
               >
                 {item.label}
               </button>
@@ -47,7 +44,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-[#8B6F47] hover:text-[#C07B5C] transition-colors"
+            className="md:hidden text-[#8B6F47] hover:text-[#C07B5C] hover:cursor-pointer transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -61,11 +58,10 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left text-sm tracking-widest uppercase transition-colors ${
-                  activeSection === item.id
-                    ? 'text-[#C07B5C] font-medium'
-                    : 'text-[#8B6F47] hover:text-[#C07B5C]'
-                }`}
+                className={`block w-full text-left text-sm tracking-widest uppercase transition-colors hover:cursor-pointer ${activeSection === item.id
+                  ? 'text-[#C07B5C] font-medium'
+                  : 'text-[#8B6F47] hover:text-[#C07B5C]'
+                  }`}
               >
                 {item.label}
               </button>

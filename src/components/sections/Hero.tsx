@@ -14,16 +14,16 @@ const Hero = () => {
         <div className="space-y-12 text-center">
           <div className="space-y-6">
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-[#8B6F47] leading-tight">
-              I am Sussana Correa
+              Soy Sussana Correa
             </h1>
             <p className="text-xl md:text-2xl text-[#A0826D] tracking-wide">
-              Digital strategist + creator
+              Estratega digital + creadora
             </p>
           </div>
 
           <div className="max-w-2xl mx-auto">
             <p className="font-serif text-2xl md:text-3xl text-[#8B6F47] leading-relaxed italic">
-              I believe in brands, I believe in people, I believe in stories.
+              Creo en las marcas, creo en las personas, creo en las historias.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ const Hero = () => {
               className="group px-10 py-4 bg-[#C07B5C] text-white text-sm tracking-widest uppercase hover:bg-[#A0826D] hover:cursor-pointer transition-all duration-300 flex items-center gap-3"
               aria-label="Ver mi trabajo en el portafolio"
             >
-              View my work
+              Ver mi trabajo
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform duration-300"
@@ -44,7 +44,7 @@ const Hero = () => {
               className="group px-10 py-4 border-2 border-[#C07B5C] text-[#C07B5C] text-sm tracking-widest uppercase hover:bg-[#C07B5C] hover:text-white hover:cursor-pointer transition-all duration-300 flex items-center gap-3"
               aria-label="Trabajar conmigo - sección de contacto"
             >
-              Work with me
+              Trabaja conmigo
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform duration-300"

@@ -5,61 +5,61 @@ const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const filters = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'restaurants', label: 'Restaurants' },
-    { id: 'hotels', label: 'Hotels' },
-    { id: 'fashion', label: 'Fashion' },
-    { id: 'other', label: 'Other' },
+    { id: 'all', label: 'Todos los Proyectos' },
+    { id: 'restaurants', label: 'Restaurantes' },
+    { id: 'hotels', label: 'Hoteles' },
+    { id: 'fashion', label: 'Moda' },
+    { id: 'other', label: 'Otros' },
   ];
 
   const projects = [
     {
       id: 1,
       category: 'restaurants',
-      title: 'Casa Bella Restaurant',
-      description: 'Complete brand transformation with focus on authentic storytelling',
+      title: 'Restaurante Casa Bella',
+      description: 'Transformación completa de marca con enfoque en narrativa auténtica',
       results: {
         engagement: '+245%',
         reach: '+180%',
-        aesthetic: 'Elevated',
+        aesthetic: 'Elevado',
       },
-      timeline: '3 months',
+      timeline: '3 meses',
     },
     {
       id: 2,
       category: 'hotels',
-      title: 'Serena Boutique Hotel',
-      description: 'Content strategy highlighting luxury and personalized experiences',
+      title: 'Hotel Boutique Serena',
+      description: 'Estrategia de contenido destacando lujo y experiencias personalizadas',
       results: {
         engagement: '+190%',
         reach: '+150%',
-        aesthetic: 'Sophisticated',
+        aesthetic: 'Sofisticado',
       },
-      timeline: '4 months',
+      timeline: '4 meses',
     },
     {
       id: 3,
       category: 'fashion',
       title: 'Luna Fashion Studio',
-      description: 'Personal branding for emerging fashion designer',
+      description: 'Marca personal para diseñador de moda emergente',
       results: {
         engagement: '+320%',
         reach: '+220%',
-        aesthetic: 'Bold',
+        aesthetic: 'Audaz',
       },
-      timeline: '6 months',
+      timeline: '6 meses',
     },
     {
       id: 4,
       category: 'other',
       title: 'Wellness by Sofia',
-      description: 'Building a personal brand from scratch for wellness coach',
+      description: 'Construcción de marca personal desde cero para coach de bienestar',
       results: {
         engagement: '+280%',
         reach: '+195%',
-        aesthetic: 'Organic',
+        aesthetic: 'Orgánico',
       },
-      timeline: '5 months',
+      timeline: '5 meses',
     },
   ];
 
@@ -73,10 +73,10 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl text-[#8B6F47] mb-6">
-            Projects & Real Case Studies
+            Proyectos y Casos de Estudio Reales
           </h2>
           <p className="text-xl text-[#A0826D] max-w-2xl mx-auto">
-            Stories of transformation, growth, and authentic connection.
+            Historias de transformación, crecimiento y conexión auténtica.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ const Portfolio = () => {
                 <div className="border-t border-[#D4C4B0]/30 pt-6">
                   <div className="flex items-center gap-2 text-sm text-[#8B6F47] mb-4">
                     <TrendingUp size={16} className="text-[#C07B5C]" />
-                    <span className="tracking-wider uppercase text-xs">Results</span>
+                    <span className="tracking-wider uppercase text-xs">Resultados</span>
                   </div>
                   <div className="grid grid-cols-3 gap-4">
                     <div>
@@ -131,7 +131,7 @@ const Portfolio = () => {
                         {project.results.engagement}
                       </div>
                       <div className="text-xs text-[#A0826D] uppercase tracking-wider">
-                        Engagement
+                        Interacción
                       </div>
                     </div>
                     <div>
@@ -139,7 +139,7 @@ const Portfolio = () => {
                         {project.results.reach}
                       </div>
                       <div className="text-xs text-[#A0826D] uppercase tracking-wider">
-                        Reach
+                        Alcance
                       </div>
                     </div>
                     <div>
@@ -147,14 +147,14 @@ const Portfolio = () => {
                         {project.results.aesthetic}
                       </div>
                       <div className="text-xs text-[#A0826D] uppercase tracking-wider">
-                        Aesthetic
+                        Estética
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="text-sm text-[#A0826D] italic">
-                  Timeline: {project.timeline}
+                  Duración: {project.timeline}
                 </div>
               </div>
             </div>

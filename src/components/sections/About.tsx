@@ -4,18 +4,18 @@ const About = () => {
   const values = [
     {
       icon: Heart,
-      title: 'Authenticity',
-      description: 'Every strategy begins with understanding who you truly are.',
+      title: 'Autenticidad',
+      description: 'Cada estrategia comienza con entender quién eres realmente.',
     },
     {
       icon: Lightbulb,
-      title: 'Creativity',
-      description: 'Ideas that surprise, content that connects emotionally.',
+      title: 'Creatividad',
+      description: 'Ideas que sorprenden, contenido que conecta emocionalmente.',
     },
     {
       icon: Handshake,
-      title: 'Closeness',
-      description: 'I work with you, not for you. Your brand is our shared project.',
+      title: 'Cercanía',
+      description: 'Trabajo contigo, no para ti. Tu marca es nuestro proyecto compartido.',
     },
   ];
 
@@ -25,18 +25,18 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-24">
           <div className="space-y-8">
             <h2 className="font-serif text-4xl md:text-5xl text-[#8B6F47] leading-tight">
-              Who I am when I'm not creating content
+              Quién soy cuando no estoy creando contenido
             </h2>
 
             <div className="space-y-6 text-[#8B6F47] leading-relaxed text-lg">
               <p>
-                I'm someone who believes that every brand has a story worth telling, and every person has the power to build something meaningful in the digital world.
+                Soy alguien que cree que cada marca tiene una historia que vale la pena contar, y cada persona tiene el poder de construir algo significativo en el mundo digital.
               </p>
               <p>
-                My journey started with curiosity—wanting to understand why some brands connect deeply while others fade into the noise. Over the years, I've learned that the difference isn't just in the aesthetics or the strategy. It's in the feeling.
+                Mi viaje comenzó con la curiosidad—querer entender por qué algunas marcas conectan profundamente mientras que otras se desvanecen en el ruido. A lo largo de los años, he aprendido que la diferencia no está solo en la estética o la estrategia. Está en el sentimiento.
               </p>
               <p>
-                I work from feeling, not from a template. Because your brand deserves more than a copy-paste solution.
+                Trabajo desde el sentimiento, no desde una plantilla. Porque tu marca merece más que una solución copiada y pegada.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const About = () => {
 
         <div className="border-t border-[#D4C4B0]/30 pt-16">
           <h3 className="font-serif text-3xl text-[#8B6F47] text-center mb-16">
-            My Philosophy
+            Mi Filosofía
           </h3>
 
           <div className="grid md:grid-cols-3 gap-12">

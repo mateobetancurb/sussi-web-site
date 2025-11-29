@@ -3,29 +3,29 @@ import { Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Sussana doesn't just create, she understands.",
+      quote: "Sussana no solo crea, ella entiende.",
       author: 'María González',
-      role: 'Restaurant Owner',
+      role: 'Propietaria de Restaurante',
       featured: false,
     },
     {
-      quote: 'My brand changed after working with her.',
+      quote: 'Mi marca cambió después de trabajar con ella.',
       author: 'Carlos Méndez',
-      role: 'Fashion Designer',
+      role: 'Diseñador de Moda',
       featured: false,
     },
     {
-      quote: "I'd never had a strategist who felt so much like part of the team.",
+      quote: "Nunca había tenido una estratega que se sintiera tanto como parte del equipo.",
       author: 'Andrea Silva',
-      role: 'Boutique Hotel Manager',
+      role: 'Gerente de Hotel Boutique',
       featured: false,
     },
   ];
 
   const featuredTestimonial = {
-    quote: "Working with Sussana was transformative. She didn't just help me with content—she helped me understand my own story and how to share it authentically. The results speak for themselves, but more than that, I finally feel confident in my digital presence.",
+    quote: "Trabajar con Sussana fue transformador. No solo me ayudó con el contenido—me ayudó a entender mi propia historia y cómo compartirla auténticamente. Los resultados hablan por sí solos, pero más que eso, finalmente me siento segura en mi presencia digital.",
     author: 'Isabella Torres',
-    role: 'Wellness Coach & Entrepreneur',
+    role: 'Coach de Bienestar y Emprendedora',
   };
 
   return (
@@ -33,7 +33,7 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="font-serif text-4xl md:text-5xl text-[#8B6F47] mb-6">
-            What They Say About Creating with Me
+            Lo Que Dicen Sobre Crear Conmigo
           </h2>
         </div>
 

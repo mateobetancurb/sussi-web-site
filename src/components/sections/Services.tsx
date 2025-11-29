@@ -15,10 +15,10 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="font-serif text-4xl md:text-5xl text-[#8B6F47] mb-6">
-            What I Create with You
+            Lo Que Creo Contigo
           </h2>
           <p className="text-xl text-[#A0826D] max-w-2xl mx-auto">
-            Services designed to elevate your brand and connect authentically with your audience.
+            Servicios diseñados para elevar tu marca y conectar auténticamente con tu audiencia.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ const Services = () => {
             >
               {service.featured && (
                 <div className="absolute -top-4 left-10 bg-[#C07B5C] text-white px-4 py-1 text-xs tracking-widest uppercase">
-                  Featured
+                  Destacado
                 </div>
               )}
 

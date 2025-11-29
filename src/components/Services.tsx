@@ -1,46 +1,8 @@
-import { ArrowRight, Calendar, TrendingUp, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { SERVICES } from '../data/services';
+import type { Service } from '../types';
 
 const Services = () => {
-  const services = [
-    {
-      icon: TrendingUp,
-      title: 'Social Media Management & Content Creation',
-      subtitle: 'Ideal for restaurants, hotels, fashion, travel agencies',
-      features: [
-        'Strategic planning tailored to your industry',
-        'Professional content creation',
-        'Monthly execution and community management',
-        'Analytics and performance reports',
-      ],
-      cta: 'Request Proposal',
-    },
-    {
-      icon: Calendar,
-      title: 'Consulting / 1:1 Sessions',
-      subtitle: 'For entrepreneurs and small brands',
-      features: [
-        'Social media strategy review',
-        'Brand positioning analysis',
-        'Content optimization guidance',
-        'Clarity sessions for growth',
-      ],
-      cta: 'Book a Session',
-    },
-    {
-      icon: Star,
-      title: 'Personal Branding',
-      subtitle: 'Flagship service for building your authentic presence',
-      features: [
-        'Concept definition and brand pillars',
-        'Content strategy and scripts',
-        'Digital image consulting',
-        'Comprehensive growth plan',
-      ],
-      cta: 'Work on My Personal Brand',
-      featured: true,
-    },
-  ];
-
   const scrollToContact = () => {
     const element = document.getElementById('contact');
     if (element) {
@@ -61,14 +23,13 @@ const Services = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {SERVICES.map((service: Service) => (
             <div
-              key={index}
-              className={`relative p-10 bg-[#F5F1ED] hover:bg-white border-2 transition-all duration-500 group ${
-                service.featured
-                  ? 'border-[#C07B5C] lg:-mt-8 lg:mb-8'
-                  : 'border-transparent hover:border-[#D4C4B0]'
-              }`}
+              key={service.id}
+              className={`relative p-10 bg-[#F5F1ED] hover:bg-white border-2 transition-all duration-500 group ${service.featured
+                ? 'border-[#C07B5C] lg:-mt-8 lg:mb-8'
+                : 'border-transparent hover:border-[#D4C4B0]'
+                }`}
             >
               {service.featured && (
                 <div className="absolute -top-4 left-10 bg-[#C07B5C] text-white px-4 py-1 text-xs tracking-widest uppercase">
@@ -99,11 +60,10 @@ const Services = () => {
 
               <button
                 onClick={scrollToContact}
-                className={`w-full py-4 text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all duration-300 group-hover:gap-4 ${
-                  service.featured
-                    ? 'bg-[#C07B5C] text-white hover:bg-[#A0826D]'
-                    : 'border-2 border-[#C07B5C] text-[#C07B5C] hover:bg-[#C07B5C] hover:text-white'
-                }`}
+                className={`w-full py-4 hover:cursor-pointer text-sm tracking-widest uppercase flex items-center justify-center gap-3 transition-all duration-300 group-hover:gap-4 ${service.featured
+                  ? 'bg-[#C07B5C] text-white hover:bg-[#A0826D]'
+                  : 'border-2 border-[#C07B5C] text-[#C07B5C] hover:bg-[#C07B5C] hover:text-white'
+                  }`}
               >
                 {service.cta}
                 <ArrowRight size={18} />

@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
             <button
               onClick={() => scrollToSection('portfolio')}
-              className="group px-10 py-4 bg-[#C07B5C] text-white text-sm tracking-widest uppercase hover:bg-[#A0826D] transition-all duration-300 flex items-center gap-3"
+              className="group px-10 py-4 bg-[#C07B5C] text-white text-sm tracking-widest uppercase hover:bg-[#A0826D] hover:cursor-pointer transition-all duration-300 flex items-center gap-3"
             >
               View my work
               <ArrowRight
@@ -40,7 +40,7 @@ const Hero = () => {
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="group px-10 py-4 border-2 border-[#C07B5C] text-[#C07B5C] text-sm tracking-widest uppercase hover:bg-[#C07B5C] hover:text-white transition-all duration-300 flex items-center gap-3"
+              className="group px-10 py-4 border-2 border-[#C07B5C] text-[#C07B5C] text-sm tracking-widest uppercase hover:bg-[#C07B5C] hover:text-white hover:cursor-pointer transition-all duration-300 flex items-center gap-3"
             >
               Work with me
               <ArrowRight

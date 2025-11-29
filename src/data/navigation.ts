@@ -6,5 +6,4 @@ export const NAV_ITEMS: NavItem[] = [
     { id: 'services', label: 'Servicios' },
     { id: 'portfolio', label: 'Portafolio' },
     { id: 'testimonials', label: 'Testimonios' },
-    { id: 'contact', label: 'Contacto' },
 ];

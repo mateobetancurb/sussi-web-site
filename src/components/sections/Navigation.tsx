@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import type { NavigationProps } from '../types';
-import { NAV_ITEMS } from '../data/navigation';
+import type { NavigationProps } from '../../types';
+import { NAV_ITEMS } from '../../data/navigation';
 
 
 const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {

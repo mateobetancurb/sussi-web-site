@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react';
-import { SERVICES } from '../data/services';
-import type { Service } from '../types';
+import { SERVICES } from '../../data/services';
+import type { Service } from '../../types';
 
 const Services = () => {
   const scrollToContact = () => {

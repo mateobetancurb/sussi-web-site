@@ -1,8 +1,7 @@
-const WhatsAppButton = () => {
-  const whatsappNumber = '573104647152';
-  const message = 'Hola Sussana! Me interesa saber más sobre tus servicios';
+import { getWhatsAppUrl } from '../../utils';
 
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+const WhatsAppButton = () => {
+  const whatsappUrl = getWhatsAppUrl();
 
   return (
     <a

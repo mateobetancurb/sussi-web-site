@@ -1,12 +1,16 @@
 import { ArrowRight } from 'lucide-react';
+import { getWhatsAppUrl } from '../../utils/';
 
 const Hero = () => {
+  const whatsappUrl = getWhatsAppUrl();
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
 
   return (
     <section className="min-h-screen flex items-center justify-center px-6 lg:px-12 pt-20">
@@ -39,17 +43,19 @@ const Hero = () => {
                 className="group-hover:translate-x-1 transition-transform duration-300"
               />
             </button>
-            <button
-              onClick={() => scrollToSection('contact')}
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group px-10 py-4 border-2 border-[#C07B5C] text-[#C07B5C] text-sm tracking-widest uppercase hover:bg-[#C07B5C] hover:text-white hover:cursor-pointer transition-all duration-300 flex items-center gap-3"
-              aria-label="Trabajar conmigo - sección de contacto"
+              aria-label="Trabajar conmigo - contactar por WhatsApp"
             >
               Trabaja conmigo
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform duration-300"
               />
-            </button>
+            </a>
           </div>
         </div>
       </div>

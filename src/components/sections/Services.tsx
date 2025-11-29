@@ -64,6 +64,7 @@ const Services = () => {
                   ? 'bg-[#C07B5C] text-white hover:bg-[#A0826D]'
                   : 'border-2 border-[#C07B5C] text-[#C07B5C] hover:bg-[#C07B5C] hover:text-white'
                   }`}
+                aria-label={`${service.cta} para el servicio ${service.title}`}
               >
                 {service.cta}
                 <ArrowRight size={18} />

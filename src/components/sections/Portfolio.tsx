@@ -90,6 +90,8 @@ const Portfolio = () => {
                   ? 'bg-[#C07B5C] text-white'
                   : 'bg-white text-[#8B6F47] hover:bg-[#D4C4B0]/30'
               }`}
+              aria-label={`Filtrar portafolio por ${filter.label.toLowerCase()}`}
+              aria-pressed={activeFilter === filter.id}
             >
               {filter.label}
             </button>

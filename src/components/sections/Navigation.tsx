@@ -23,6 +23,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
           <button
             onClick={() => scrollToSection('home')}
             className="font-serif text-2xl text-[#8B6F47] tracking-wide hover:text-[#C07B5C] hover:cursor-pointer transition-colors duration-300"
+            aria-label="Ir a la sección de inicio"
           >
             Sussana Correa
           </button>
@@ -36,6 +37,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
                   ? 'text-[#C07B5C] font-medium'
                   : 'text-[#8B6F47] hover:text-[#C07B5C]'
                   }`}
+                aria-label={`Navegar a la sección ${item.label}`}
               >
                 {item.label}
               </button>
@@ -45,6 +47,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden text-[#8B6F47] hover:text-[#C07B5C] hover:cursor-pointer transition-colors"
+            aria-label={isMenuOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -62,6 +65,7 @@ const Navigation = ({ activeSection, setActiveSection }: NavigationProps) => {
                   ? 'text-[#C07B5C] font-medium'
                   : 'text-[#8B6F47] hover:text-[#C07B5C]'
                   }`}
+                aria-label={`Navegar a la sección ${item.label}`}
               >
                 {item.label}
               </button>

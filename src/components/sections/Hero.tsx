@@ -31,6 +31,7 @@ const Hero = () => {
             <button
               onClick={() => scrollToSection('portfolio')}
               className="group px-10 py-4 bg-[#C07B5C] text-white text-sm tracking-widest uppercase hover:bg-[#A0826D] hover:cursor-pointer transition-all duration-300 flex items-center gap-3"
+              aria-label="Ver mi trabajo en el portafolio"
             >
               View my work
               <ArrowRight
@@ -41,6 +42,7 @@ const Hero = () => {
             <button
               onClick={() => scrollToSection('contact')}
               className="group px-10 py-4 border-2 border-[#C07B5C] text-[#C07B5C] text-sm tracking-widest uppercase hover:bg-[#C07B5C] hover:text-white hover:cursor-pointer transition-all duration-300 flex items-center gap-3"
+              aria-label="Trabajar conmigo - sección de contacto"
             >
               Work with me
               <ArrowRight
